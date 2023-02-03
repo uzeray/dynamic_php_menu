@@ -1,0 +1,20 @@
+    RewriteEngine On
+
+    # simple .htaccess directory assignment if you want to more
+    # advanced .htaccess Rules or Conditions You can check to
+    # stackoverflow for that...
+
+    RewriteRule Home$ index.php
+    RewriteRule About_Us$ uber_uns/index.php
+    RewriteRule Our_Activities$ ourActivities/ouractivities.php
+    RewriteRule Letters$ briefe/briefe.php
+    RewriteRule Membership$ mitgliedschaft/mitgliedschaft.php
+    RewriteRule Contact$ kontakt/kontakt.php
+    RewriteRule Send$ kontakt/mail.php
+    # if you are using an $_GET method in an page must assign to directory as below
+    RewriteRule Letter briefe/letter.php?id=$1 [QSA]
+    RewriteRule Register$ mitgliedschaft/membership.php
+    RewriteRule Artist$ kunstler/artist.php?artist=$1 [QSA]
+    # last directory assignment
+    RewriteRule Activity$ ourActivities/activity.php?activity=$1 [QSA,L]
+
