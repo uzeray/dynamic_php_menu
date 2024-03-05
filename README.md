@@ -1,5 +1,6 @@
 
 
+Crated for www.vereineuphrattigris.ch
 that example about an dynamic PHP and Mysqli Menu creating
 you can see al the explaintation on over code blocks, in this example I used just two
 if statemnt to draw an drop down - responsive and simple menu/navbar.
